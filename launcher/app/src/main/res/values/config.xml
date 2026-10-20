@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The four dock apps, left to right (package names). Anything not installed is skipped.
+         Everything else goes in the grid, A to Z. -->
+    <string-array name="dock_packages">
+        <item>com.google.android.youtube.tv</item>
+        <item>com.stremio.one</item>
+        <item>app.nexus.display</item>
+        <item>com.amazon.amazonvideo.livingroom</item>
+    </string-array>
+
+    <!-- Apps that only have a regular (phone) launcher entry, no TV one, e.g. the sideloaded Netflix.
+         They are listed in the grid; to put one in the dock, move it into dock_packages above. -->
+    <string-array name="extra_packages">
+        <item>com.netflix.mediaclient</item>
+    </string-array>
+
+    <!-- Critter theme: a night sky with stars, and little original creatures that wander along the top of the dock.
+         Set to false for the plain black launcher. -->
+    <bool name="critter_theme">true</bool>
+    <!-- Draw the creatures as chunky pixel art instead of smooth shapes. -->
+    <bool name="critter_pixel_art">false</bool>
+</resources>
